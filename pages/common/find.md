@@ -34,3 +34,7 @@
 - Find empty (0 byte) files and delete them:
 
 `find {{root_path}} -type {{f}} -empty -delete`
+
+- Find files at most 4 levels deep (`maxdepth` of 1 will be files in the `root_path`):
+
+`find {{root_path}} -maxdepth {{4}}`
